@@ -19,7 +19,7 @@
 6. Запушить main на внешний репозиторий. - Необходимо находится в ветке main набрать `git push`
 7. В ветке CheckLists набросать структуру чек листа. - `git checkout Checklists` -> `touch checklist.txt` -> `vim checklist.txt`
 8. Запушить структуру на внешний репозиторий. - `git add checklist.txt` -> `git commit -m "add file checklist.txt"` -> `git push`
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main. - На web интерфейсе на жать "Compare & pull request" -> указать в списке веток merge из Checklists в main ветку -> написать комментарий -> нажать "Create pull request" -> после одобрения статуса нажать "Merge pull request" -> написать комментарий нажать "Confirm merge"
 10. Синхронизировать Внешнюю и Локальную ветки Main. - Находясь в ветке main набрать `git pull`
 
 

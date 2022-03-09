@@ -11,7 +11,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
+<<<<<<< HEAD
 					"raw": "http://162.55.220.72:5005/get_method?name=igor&age=34",
+=======
+					"raw": "http://162.55.220.72:5005/get_method?name=igog&age=34",
+>>>>>>> 825774697ef5014509f937501fb21097a01c1978
 					"protocol": "http",
 					"host": [
 						"162",
@@ -26,6 +30,7 @@
 					"query": [
 						{
 							"key": "name",
+<<<<<<< HEAD
 							"value": "igor"
 						},
 						{
@@ -133,19 +138,25 @@
 					"query": [
 						{
 							"key": "name",
+=======
+>>>>>>> 825774697ef5014509f937501fb21097a01c1978
 							"value": "igog"
 						},
 						{
 							"key": "age",
 							"value": "34"
+<<<<<<< HEAD
 						},
 						{
 							"key": "salary",
 							"value": "999"
+=======
+>>>>>>> 825774697ef5014509f937501fb21097a01c1978
 						}
 					]
 				}
 			},
+<<<<<<< HEAD
 			"response": [
 				{
 					"name": "2",
@@ -713,6 +724,17 @@
 					"body": "{\n    \"person\": {\n        \"u_age\": 34,\n        \"u_name\": [\n            \"igor\",\n            999,\n            34\n        ],\n        \"u_salary_5_years\": 4195.8\n    },\n    \"qa_salary_after_1.5_year\": 3296.7,\n    \"qa_salary_after_12_months\": 2697.3,\n    \"qa_salary_after_3.5_years\": 3796.2,\n    \"qa_salary_after_6_months\": 1998,\n    \"start_qa_salary\": 999\n}"
 				}
 			]
+=======
+			"response": []
+		},
+		{
+			"name": "2",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+>>>>>>> 825774697ef5014509f937501fb21097a01c1978
 		}
 	]
 }

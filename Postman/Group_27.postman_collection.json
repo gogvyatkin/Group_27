@@ -353,9 +353,13 @@
 					"script": {
 						"exec": [
 							"\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var resp_token = jsonData.token;\r",
+							"    console.log('token = ' + resp_token)\r",
 							"\r",
 							"\r",
-							"pm.environment.set(\"variable_key\", \"variable_value\");"
+							"pm.environment.set(\"token\", resp_token);\r",
+							""
 						],
 						"type": "text/javascript"
 					}

@@ -293,6 +293,25 @@
 				},
 				{
 					"name": "test_2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Body is correct\", function () {\r",
+									"    pm.expect(jsonData.name).to.eql(\"igog\");\r",
+									"    pm.expect(jsonData.age).to.eql(\"34\");\r",
+									"    pm.expect(jsonData.salary).to.eql(1000)\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -301,38 +320,41 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "{{name}}",
+									"value": "igog",
 									"type": "text"
 								},
 								{
 									"key": "age",
-									"value": "{{age}}",
+									"value": "34",
 									"type": "text"
 								},
 								{
 									"key": "salary",
-									"value": "{{salary}}",
+									"value": "1000",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "{{url}}user_info_3?name={{name}}&age={{age}}&salary={{salary}}",
+							"raw": "{{url}}user_info_3",
 							"host": [
 								"{{url}}user_info_3"
 							],
 							"query": [
 								{
 									"key": "name",
-									"value": "{{name}}"
+									"value": "{{name}}",
+									"disabled": true
 								},
 								{
 									"key": "age",
-									"value": "{{age}}"
+									"value": "{{age}}",
+									"disabled": true
 								},
 								{
 									"key": "salary",
-									"value": "{{salary}}"
+									"value": "{{salary}}",
+									"disabled": true
 								}
 							]
 						}

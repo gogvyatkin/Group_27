@@ -301,6 +301,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
+
 									"\r",
 									"var parsreq = request.data\r",
 									"pm.test(\"Body is correct\", function () {\r",
@@ -313,6 +314,12 @@
 									"    pm.expect(jsonData.name).to.eql(parsreq.name);\r",
 									"\r",
 									"    });"
+									"pm.test(\"Body is correct\", function () {\r",
+									"    pm.expect(jsonData.name).to.eql(\"igog\");\r",
+									"    pm.expect(jsonData.age).to.eql(\"34\");\r",
+									"    pm.expect(jsonData.salary).to.eql(1000)\r",
+									"    });\r",
+									""
 								],
 								"type": "text/javascript"
 							}

@@ -301,8 +301,8 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"\r",
 									"var parsreq = request.data\r",
+									"\r",
 									"pm.test(\"Body is correct\", function () {\r",
 									"\r",
 									"\r",
@@ -311,8 +311,14 @@
 									"    pm.expect(jsonData.salary).to.eql(1000)\r",
 									"    \r",
 									"    pm.expect(jsonData.name).to.eql(parsreq.name);\r",
+									"    pm.expect(jsonData.age).to.eql(parsreq.age);\r",
+									"    pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
+									"    console.log(jsonData.family)\r",
+									"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(+parsreq.salary * 4);\r",
 									"\r",
-									"    });"
+									"\r",
+									"\r",
+									"    });   "
 								],
 								"type": "text/javascript"
 							}

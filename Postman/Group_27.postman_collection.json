@@ -298,13 +298,10 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"\r",
-									"\r",
 									"var jsonData = pm.response.json();\r",
 									"var parsreq = request.data\r",
 									"\r",
 									"pm.test(\"Body is correct\", function () {\r",
-									"\r",
 									"\r",
 									"    pm.expect(jsonData.name).to.eql(\"igog\");\r",
 									"    pm.expect(jsonData.age).to.eql(\"34\");\r",
@@ -315,8 +312,6 @@
 									"    pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
 									"    console.log(jsonData.family)\r",
 									"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(+parsreq.salary * 4);\r",
-									"\r",
-									"\r",
 									"\r",
 									"    });   "
 								],
@@ -348,9 +343,12 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}user_info_3",
+							"raw": "{{url}}/user_info_3",
 							"host": [
-								"{{url}}user_info_3"
+								"{{url}}"
+							],
+							"path": [
+								"user_info_3"
 							],
 							"query": [
 								{
@@ -367,6 +365,81 @@
 									"key": "salary",
 									"value": "{{salary}}",
 									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test_3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"var parsreq = request.data;\r",
+									"\r",
+									"\r",
+									"pm.test(\"Body is correct\", function () {\r",
+									"pm.expect(jsonData.name).to.eql(parsreq.name);\r",
+									"pm.expect(jsonData.age).to.eql(parsreq.age);\r",
+									"pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
+									"console.log(jsonData.family)\r",
+									"});\r",
+									"\r",
+									"console.log(jsonData.salary)\r",
+									"console.log(+parsreq.salary)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "{{age}}",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "{{salary}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
+							"host": [
+								"{{url}}object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "{{name}}"
+								},
+								{
+									"key": "age",
+									"value": "{{age}}"
+								},
+								{
+									"key": "salary",
+									"value": "{{salary}}"
 								}
 							]
 						}

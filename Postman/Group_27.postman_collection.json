@@ -382,16 +382,18 @@
 									"var jsonData = pm.response.json();\r",
 									"var parsreq = request.data;\r",
 									"\r",
-									"\r",
 									"pm.test(\"Body is correct\", function () {\r",
 									"pm.expect(jsonData.name).to.eql(parsreq.name);\r",
 									"pm.expect(jsonData.age).to.eql(parsreq.age);\r",
 									"pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
-									"console.log(jsonData.family)\r",
+									"console.log(jsonData.family);\r",
+									"pm.expect(jsonData.family.pets.dog).to.have.any.keys('name');\r",
+									"pm.expect(jsonData.family.pets.dog).to.have.any.keys('age');\r",
+									"pm.expect(jsonData.family.pets.dog.name).to.eql(\"Luky\");\r",
+									"pm.expect(jsonData.family.pets.dog.age).to.eql(4);\r",
 									"});\r",
 									"\r",
-									"console.log(jsonData.salary)\r",
-									"console.log(+parsreq.salary)"
+									""
 								],
 								"type": "text/javascript"
 							}

@@ -479,7 +479,16 @@
 									"console.log(jsonData.salary);\r",
 									"console.log(jsonData.salary [0]);\r",
 									"console.log(jsonData.salary [1]);\r",
-									"console.log(jsonData.salary [2]);"
+									"console.log(jsonData.salary [2]);\r",
+									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
+									"pm.expect(jsonData.salary [0]).to.eql(+parsreq.salary);\r",
+									"});\r",
+									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
+									"pm.expect(+jsonData.salary [1]).to.eql(+parsreq.salary * 2);\r",
+									"});\r",
+									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
+									"pm.expect(+jsonData.salary [2]).to.eql(+parsreq.salary * 3);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}

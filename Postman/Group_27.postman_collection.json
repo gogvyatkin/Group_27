@@ -488,7 +488,14 @@
 									"});\r",
 									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
 									"pm.expect(+jsonData.salary [2]).to.eql(+parsreq.salary * 3);\r",
-									"});"
+									"});\r",
+									"\r",
+									"var resp_name = jsonData.name;\r",
+									"pm.environment.set(\"name\", resp_name);\r",
+									"var resp_age = jsonData.age;\r",
+									"pm.environment.set(\"age\", resp_age);\r",
+									"let resp_salary = jsonData.salary;\r",
+									"pm.environment.set(\"salary\", resp_salary);"
 								],
 								"type": "text/javascript"
 							}
@@ -521,7 +528,7 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
+							"raw": "{{url}}object_info_4?name={{name}}&age={{age}}&salary=999",
 							"host": [
 								"{{url}}object_info_4"
 							],
@@ -536,7 +543,7 @@
 								},
 								{
 									"key": "salary",
-									"value": "{{salary}}"
+									"value": "999"
 								}
 							]
 						}

@@ -495,7 +495,11 @@
 									"var resp_age = jsonData.age;\r",
 									"pm.environment.set(\"age\", resp_age);\r",
 									"let resp_salary = jsonData.salary;\r",
-									"pm.environment.set(\"salary\", resp_salary);"
+									"pm.environment.set(\"salary\", resp_salary [0]);\r",
+									"\r",
+									"for(var i = 0; i < 3; i += 0) {\r",
+									"    console.log(resp_salary += i);\r",
+									"}"
 								],
 								"type": "text/javascript"
 							}

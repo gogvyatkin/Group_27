@@ -553,6 +553,34 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "test_5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
+							"host": [
+								"{{url}}object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "{{name}}"
+								},
+								{
+									"key": "age",
+									"value": "{{age}}"
+								},
+								{
+									"key": "salary",
+									"value": "{{salary}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},

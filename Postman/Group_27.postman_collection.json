@@ -497,9 +497,11 @@
 									"let resp_salary = jsonData.salary;\r",
 									"pm.environment.set(\"salary\", resp_salary [0]);\r",
 									"\r",
-									"for(var i = 0; i < 3; i += 0) {\r",
-									"    console.log(resp_salary += i);\r",
-									"}"
+									"let i = jsonData.salary;\r",
+									"for (; i < 3; i++) {\r",
+									"  alert( i )\r",
+									"  }\r",
+									"  console.log(\"salary = \", i)"
 								],
 								"type": "text/javascript"
 							}

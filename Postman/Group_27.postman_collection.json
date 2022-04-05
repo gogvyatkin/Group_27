@@ -221,22 +221,25 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}user_info_2?name={{name}}&age={{age}}&salary={{salary}}",
+							"raw": "{{url}}user_info_2",
 							"host": [
 								"{{url}}user_info_2"
 							],
 							"query": [
 								{
 									"key": "name",
-									"value": "{{name}}"
+									"value": "{{name}}",
+									"disabled": true
 								},
 								{
 									"key": "age",
-									"value": "{{age}}"
+									"value": "{{age}}",
+									"disabled": true
 								},
 								{
 									"key": "salary",
-									"value": "{{salary}}"
+									"value": "{{salary}}",
+									"disabled": true
 								}
 							]
 						}
@@ -497,11 +500,11 @@
 									"let resp_salary = jsonData.salary;\r",
 									"pm.environment.set(\"salary\", resp_salary [0]);\r",
 									"\r",
-									"let i = jsonData.salary;\r",
-									"for (; i < 3; i++) {\r",
+									"let i = jsonData.salary [0];\r",
+									"for (; i < 3000; i++) {\r",
 									"  alert( i )\r",
-									"  }\r",
-									"  console.log(\"salary = \", i)"
+									"}\r",
+									"console.log(\"salary=\", i)"
 								],
 								"type": "text/javascript"
 							}
@@ -563,6 +566,8 @@
 							"listen": "test",
 							"script": {
 								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"var parsreq = request.data;\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});"
@@ -572,25 +577,48 @@
 						}
 					],
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "{{name}}",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "{{age}}",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "{{salary}}",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
-							"raw": "{{url}}object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
+							"raw": "{{url}}user_info_2",
 							"host": [
-								"{{url}}object_info_4"
+								"{{url}}user_info_2"
 							],
 							"query": [
 								{
 									"key": "name",
-									"value": "{{name}}"
+									"value": "{{name}}",
+									"disabled": true
 								},
 								{
 									"key": "age",
-									"value": "{{age}}"
+									"value": "{{age}}",
+									"disabled": true
 								},
 								{
 									"key": "salary",
-									"value": "{{salary}}"
+									"value": "{{salary}}",
+									"disabled": true
 								}
 							]
 						}

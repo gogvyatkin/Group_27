@@ -61,22 +61,25 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}user_info_3?name={{name}}&age={{age}}&salary={{salary}}",
+							"raw": "{{url}}user_info_3",
 							"host": [
 								"{{url}}user_info_3"
 							],
 							"query": [
 								{
 									"key": "name",
-									"value": "{{name}}"
+									"value": "{{name}}",
+									"disabled": true
 								},
 								{
 									"key": "age",
-									"value": "{{age}}"
+									"value": "{{age}}",
+									"disabled": true
 								},
 								{
 									"key": "salary",
-									"value": "{{salary}}"
+									"value": "{{salary}}",
+									"disabled": true
 								}
 							]
 						}
@@ -305,22 +308,28 @@
 									"var parsreq = request.data\r",
 									"\r",
 									"pm.test(\"name in resp is equal to name req\", function () {\r",
-									"pm.expect(jsonData.name).to.eql(\"igog\");\r",
+									"pm.expect(jsonData.name).to.eql(\"Igor'\");\r",
 									"}); \r",
 									"pm.test(\"age in resp is equal to age req\", function () {\r",
 									"pm.expect(jsonData.age).to.eql(\"34\");\r",
 									"});\r",
 									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
-									"pm.expect(jsonData.salary).to.eql(1000);\r",
+									"pm.expect(jsonData.salary).to.eql(999);\r",
 									"});\r",
+									"console.log(jsonData.salary)\r",
 									"pm.test(\"name in resp is equal to name req\", function () { \r",
-									"    pm.expect(jsonData.name).to.eql(parsreq.name);\r",
-									"    pm.expect(jsonData.age).to.eql(parsreq.age);\r",
-									"    pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
+									"pm.expect(jsonData.name).to.eql(parsreq.name);\r",
+									"});\r",
+									"pm.test(\"age in resp is equal to age req\", function () { \r",
+									"pm.expect(jsonData.age).to.eql(parsreq.age);\r",
+									"});\r",
+									"pm.test(\"salary in resp is equal to salary req\", function () { \r",
+									"pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
+									"});\r",
 									"    console.log(jsonData.family)\r",
+									"pm.test(\"u_salary_1_5_yearis equal to salary req * 4\", function () { \r",
 									"    pm.expect(jsonData.family.u_salary_1_5_year).to.eql(+parsreq.salary * 4);\r",
-									"\r",
-									"    });   "
+									"    });"
 								],
 								"type": "text/javascript"
 							}
@@ -334,7 +343,7 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "igog",
+									"value": "Igor'",
 									"type": "text"
 								},
 								{
@@ -344,7 +353,7 @@
 								},
 								{
 									"key": "salary",
-									"value": "1000",
+									"value": "999",
 									"type": "text"
 								}
 							]
@@ -385,22 +394,20 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"\r",
 									"var jsonData = pm.response.json();\r",
 									"var parsreq = request.data;\r",
 									"\r",
-									"pm.test(\"name in resp is equal to name req \", function () {\r",
+									"pm.test(\"name in resp is equal to name from req \", function () {\r",
 									"pm.expect(jsonData.name).to.eql(parsreq.name);\r",
 									"});\r",
-									"pm.test(\"age in resp is equal to age req\", function () {\r",
+									"pm.test(\"age in resp is equal to age from req\", function () {\r",
 									"pm.expect(jsonData.age).to.eql(parsreq.age);\r",
 									"});\r",
-									"pm.test(\"salary in resp equal salary in req\", function () {\r",
+									"pm.test(\"salary in resp equal salary from req\", function () {\r",
 									"pm.expect(jsonData.salary).to.eql(+parsreq.salary);\r",
 									"});\r",
-									"console.log(jsonData.family); // print to the console the parameters family in from the response\r",
+									"console.log(jsonData.family); // print parameters family in from the response\r",
 									"pm.test(\"the dog parameter has a name parameter\", function () {\r",
-									"    \r",
 									"pm.expect(jsonData.family.pets.dog).to.have.any.keys('name');\r",
 									"});\r",
 									"pm.test(\"the dog parameter has a age parameter\", function () {\r",
@@ -418,32 +425,9 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "name",
-									"value": "{{name}}",
-									"type": "text"
-								},
-								{
-									"key": "age",
-									"value": "{{age}}",
-									"type": "text"
-								},
-								{
-									"key": "salary",
-									"value": "{{salary}}",
-									"type": "text"
-								}
-							]
-						},
 						"url": {
 							"raw": "{{url}}object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
 							"host": [
@@ -476,39 +460,38 @@
 								"exec": [
 									"var jsonData = pm.response.json();\r",
 									"var parsreq = request.data;\r",
-									"pm.test(\"name in resp is equal to name req \", function () {\r",
+									"consol.log(parsreq);\r",
+									"pm.test(\"name in resp is equal to name from req \", function () {\r",
 									"pm.expect(jsonData.name).to.eql(parsreq.name);\r",
 									"});\r",
-									"pm.test(\"age in resp is equal to age req\", function () {\r",
+									"pm.test(\"age in resp is equal to age from req\", function () {\r",
 									"pm.expect(jsonData.age).to.eql(+parsreq.age);\r",
 									"});\r",
-									"console.log(parsreq.salary);\r",
-									"console.log(jsonData.salary);\r",
-									"console.log(jsonData.salary [0]);\r",
-									"console.log(jsonData.salary [1]);\r",
-									"console.log(jsonData.salary [2]);\r",
-									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
+									"console.log('print salary req', parsreq.salary); // print salary of request\r",
+									"console.log('print salary resp', jsonData.salary); // preint salary of response\r",
+									"console.log('print salary resp 0',jsonData.salary [0]); // 0 element of salary parameter from response\r",
+									"console.log('print salary resp 1',jsonData.salary [1]); // 1 element of salary parameter from response\r",
+									"console.log('print salary resp 2', jsonData.salary [2]); // 2 element of salary parameter from response\r",
+									"pm.test(\"salary in resp is equal to salary from req\", function () {\r",
 									"pm.expect(jsonData.salary [0]).to.eql(+parsreq.salary);\r",
 									"});\r",
-									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
+									"pm.test(\"salary in resp is equal to salary from req\", function () {\r",
 									"pm.expect(+jsonData.salary [1]).to.eql(+parsreq.salary * 2);\r",
 									"});\r",
-									"pm.test(\"salary in resp is equal to salary req\", function () {\r",
+									"pm.test(\"salary in resp is equal to from req\", function () {\r",
 									"pm.expect(+jsonData.salary [2]).to.eql(+parsreq.salary * 3);\r",
 									"});\r",
 									"\r",
 									"var resp_name = jsonData.name;\r",
-									"pm.environment.set(\"name\", resp_name);\r",
-									"var resp_age = jsonData.age;\r",
-									"pm.environment.set(\"age\", resp_age);\r",
+									"pm.environment.set(\"name\", resp_name); // create 'name' variable in environment\r",
+									" var resp_age = jsonData.age;\r",
+									"pm.environment.set(\"age\", resp_age); // create 'age' variable in environment\r",
 									"let resp_salary = jsonData.salary;\r",
-									"pm.environment.set(\"salary\", resp_salary [0]);\r",
+									"pm.environment.set(\"salary\", resp_salary [0]); // create 'name' variable in environment\r",
 									"\r",
-									"let i = jsonData.salary [0];\r",
-									"for (; i < 3000; i++) {\r",
-									"  alert( i )\r",
-									"}\r",
-									"console.log(\"salary=\", i)"
+									"// for (i=0; i < resp_salary.lenght; i++) {\r",
+									"// console.log(\"salary=\", resp_salary [i] )\r",
+									"// }"
 								],
 								"type": "text/javascript"
 							}
@@ -522,26 +505,10 @@
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "name",
-									"value": "Igor'",
-									"type": "text"
-								},
-								{
-									"key": "age",
-									"value": "34",
-									"type": "text"
-								},
-								{
-									"key": "salary",
-									"value": "999",
-									"type": "text"
-								}
-							]
+							"formdata": []
 						},
 						"url": {
-							"raw": "{{url}}object_info_4?name={{name}}&age={{age}}&salary=999",
+							"raw": "{{url}}object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
 							"host": [
 								"{{url}}object_info_4"
 							],
@@ -556,7 +523,7 @@
 								},
 								{
 									"key": "salary",
-									"value": "999"
+									"value": "{{salary}}"
 								}
 							]
 						}

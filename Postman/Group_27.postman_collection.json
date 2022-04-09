@@ -308,7 +308,7 @@
 									"var parsreq = request.data\r",
 									"\r",
 									"pm.test(\"name in resp is equal to name req\", function () {\r",
-									"pm.expect(jsonData.name).to.eql(\"Igor'\");\r",
+									"pm.expect(jsonData.name).to.eql(\"Igog\");\r",
 									"}); \r",
 									"pm.test(\"age in resp is equal to age req\", function () {\r",
 									"pm.expect(jsonData.age).to.eql(\"34\");\r",
@@ -343,7 +343,7 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Igor'",
+									"value": "Igog",
 									"type": "text"
 								},
 								{
@@ -496,9 +496,9 @@
 									"let resp_salary = jsonData.salary;\r",
 									"pm.environment.set(\"salary\", resp_salary [0]); // create 'name' variable in environment\r",
 									"\r",
-									"// for (i=0; i < resp_salary.lenght; i++) {\r",
-									"// console.log(\"salary=\", resp_salary [i] )\r",
-									"// }"
+									"for (let i = 0; i < resp_salary.length; i++) {\r",
+									"     console.log(\"salaru loop = \", resp_salary[i]);\r",
+									"}"
 								],
 								"type": "text/javascript"
 							}
@@ -546,9 +546,35 @@
 								"exec": [
 									"var jsonData = pm.response.json();\r",
 									"var parsreq = request.data;\r",
+									"\r",
+									"console.log('req =', parsreq)\r",
+									"console.log('resp =', jsonData.start_qa_salary)\r",
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"pm.test(\"response has parameter start_qa_salary\", function () {\r",
+									"pm.expect(jsonData).to.have.any.keys('start_qa_salary');\r",
+									"});\r",
+									"pm.test(\"response has parameter qa_salary_after_6_months\", function () {\r",
+									"pm.expect(jsonData).to.have.any.keys('qa_salary_after_6_months');\r",
+									"});\r",
+									"pm.test(\"response has parameter qa_salary_after_12_months\", function () {\r",
+									"pm.expect(jsonData).to.have.any.keys('qa_salary_after_12_months');\r",
+									"});\r",
+									"pm.test(\"response has parameter qa_salary_after_1.5_year\", function () {\r",
+									"pm.expect(jsonData).to.have.any.keys('qa_salary_after_1.5_year');\r",
+									"});\r",
+									"pm.test(\"response has parameter qa_salary_after_3.5_years\", function () {\r",
+									"pm.expect(jsonData).to.have.any.keys('qa_salary_after_3.5_years');\r",
+									"});\r",
+									"pm.test(\"response has parameter person\", function () {\r",
+									"pm.expect(jsonData).to.have.any.keys('person');\r",
+									"});\r",
+									"pm.test(\"start_qa_salary is equal to salary from req\", function () {\r",
+									"pm.expect(jsonData.start_qa_salary).to.eql(+parsreq.salary);\r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -637,7 +663,7 @@
 					"formdata": [
 						{
 							"key": "login",
-							"value": "Igor'",
+							"value": "Igog",
 							"type": "text"
 						},
 						{

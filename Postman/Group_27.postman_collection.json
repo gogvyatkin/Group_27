@@ -9,7 +9,7 @@
 			"name": "HW_1",
 			"item": [
 				{
-					"name": "1",
+					"name": "EP_1",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -36,7 +36,7 @@
 					"response": []
 				},
 				{
-					"name": "2",
+					"name": "EP_2",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -87,7 +87,7 @@
 					"response": []
 				},
 				{
-					"name": "3",
+					"name": "EP_3",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -115,7 +115,7 @@
 					"response": []
 				},
 				{
-					"name": "4",
+					"name": "EP_4",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -143,7 +143,7 @@
 					"response": []
 				},
 				{
-					"name": "5",
+					"name": "EP_5",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -171,7 +171,7 @@
 					"response": []
 				},
 				{
-					"name": "6",
+					"name": "EP_6",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -199,7 +199,7 @@
 					"response": []
 				},
 				{
-					"name": "7",
+					"name": "EP_7",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -255,7 +255,7 @@
 			"name": "HW_2",
 			"item": [
 				{
-					"name": "test_1",
+					"name": "EP_1",
 					"event": [
 						{
 							"listen": "test",
@@ -298,7 +298,7 @@
 					"response": []
 				},
 				{
-					"name": "test_2",
+					"name": "EP_2",
 					"event": [
 						{
 							"listen": "test",
@@ -388,7 +388,7 @@
 					"response": []
 				},
 				{
-					"name": "test_3",
+					"name": "EP_3",
 					"event": [
 						{
 							"listen": "test",
@@ -459,7 +459,7 @@
 					"response": []
 				},
 				{
-					"name": "test_4",
+					"name": "EP_4",
 					"event": [
 						{
 							"listen": "test",
@@ -538,7 +538,7 @@
 					"response": []
 				},
 				{
-					"name": "test_5",
+					"name": "EP_5",
 					"event": [
 						{
 							"listen": "test",
@@ -597,15 +597,7 @@
 									"for (let i = 0; i < jsonData.person.u_name.length; i++) {\r",
 									"     console.log(\"person loop = \", jsonData.person.u_name[i]);\r",
 									"}\r",
-									"// let per = jsonData.person;\r",
-									"// per.forEach((1, 1) => {\r",
-									"    // console.log(1, 1)\r",
-									"// });\r",
-									"// var array = jsonData.person;\r",
-									"// array.forEach(function(val, inc){\r",
-									"//   console.log(typeof inc);\r",
-									"//   console.log(val);\r",
-									"// });"
+									"console.log(typeof jsonData)"
 								],
 								"type": "text/javascript"
 							}

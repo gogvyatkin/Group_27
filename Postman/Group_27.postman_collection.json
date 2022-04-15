@@ -594,10 +594,23 @@
 									"pm.expect(jsonData.person.u_salary_5_years).to.eql(+parsreq.salary * 4.2);\r",
 									"});\r",
 									"\r",
-									"for (let i = 0; i < jsonData.person.u_name.length; i++) {\r",
-									"     console.log(\"person loop = \", jsonData.person.u_name[i]);\r",
+									"// for (let i = 0; i < jsonData.person.u_name.length; i++) {\r",
+									"//      console.log(\"person loop = \", jsonData.person.u_name[i]);\r",
+									"// }\r",
+									"jsonData.person.u_name.forEach(element => console.log(element));\r",
+									"\r",
+									"var person = jsonData.person;\r",
+									"\r",
+									"function myFunction(item, index) {\r",
+									"    console.log(item);\r",
+									"    console.log(index);\r",
 									"}\r",
-									"console.log(typeof jsonData)"
+									"person.u_name.forEach(myFunction);\r",
+									"function myFunction2(item, index){\r",
+									"console.log(index, item)\r",
+									"}\r",
+									"person.u_name.forEach(myFunction2)\r",
+									"console.log(typeof jsonData.person.u_name)"
 								],
 								"type": "text/javascript"
 							}
@@ -656,6 +669,10 @@
 		},
 		{
 			"name": "0",
+			"item": []
+		},
+		{
+			"name": "HW_3",
 			"item": []
 		},
 		{

@@ -14,9 +14,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/get_method?name={{name}}&age={{age}}",
+							"raw": "{{url}}/get_method?name={{name}}&age={{age}}",
 							"host": [
-								"{{URL}}"
+								"{{url}}"
 							],
 							"path": [
 								"get_method"
@@ -92,7 +92,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}object_info_1?name={{name}}&age={{age}}&weight={{weight}}",
+							"raw": "{{url}}object_info_1?name={{name}}&age={{age}}&weight=79",
 							"host": [
 								"{{url}}object_info_1"
 							],
@@ -107,7 +107,7 @@
 								},
 								{
 									"key": "weight",
-									"value": "{{weight}}"
+									"value": "79"
 								}
 							]
 						}
@@ -471,6 +471,8 @@
 									"pm.test(\"name in resp is equal to name from req \", function () {\r",
 									"pm.expect(jsonData.name).to.eql(get_params.name);\r",
 									"});\r",
+									"console.log(\"name\", get_params.name);\r",
+									"console.log(\"names\", jsonData.name);\r",
 									"pm.test(\"age in resp is equal to age from req\", function () {\r",
 									"pm.expect(jsonData.age).to.eql(+get_params.age);\r",
 									"});\r",
@@ -654,10 +656,6 @@
 			]
 		},
 		{
-			"name": "0",
-			"item": []
-		},
-		{
 			"name": "HW_3",
 			"item": []
 		},
@@ -672,8 +670,6 @@
 							"    var jsonData = pm.response.json();\r",
 							"    var resp_token = jsonData.token;\r",
 							"    console.log('token = ' + resp_token)\r",
-							"\r",
-							"\r",
 							"pm.environment.set(\"token\", resp_token);\r",
 							""
 						],

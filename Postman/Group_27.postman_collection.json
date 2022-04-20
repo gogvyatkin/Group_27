@@ -598,7 +598,13 @@
 									"});\r",
 									"\r",
 									"personKey.forEach(element_1 => console.log(element_1));\r",
-									"jsonData.person.u_name.forEach(element_2 => console.log(element_2));"
+									"jsonData.person.u_name.forEach(element_2 => console.log(element_2));\r",
+									"\r",
+									"// for (obj in ourResp.person){\r",
+									"        // if typeof ourResp.person[obj]{\r",
+									"// for (val in ourResp.person[obj])\r",
+									"//         }\r",
+									"// }"
 								],
 								"type": "text/javascript"
 							}

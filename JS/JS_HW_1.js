@@ -26,31 +26,44 @@ console.log(typeof(item_7), "item_7 ==", item_7); console.log(typeof (item_7_typ
 let age_1 = 10;
 let age_2 = 18;
 let age_3 = 60;
+
+console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
 // if (age_1 == 10){
-//     console.log("variable value is correct = ", age_1)
-// } else {
-//     console.log("invalid variable value age_1")
+//     console.log(age_1," - valid variable value age_1",)
 // }
-// if (age_1 < age_2){
-//     console.log('You don’t have access cause your age is ' + age_1 + ' It’s less then')
-// }
-//     else if(age_1 >= age_2 && age_1 < age_3){
-// console.log('Welcome  !')
+// else if (age != 10) {
+//     console.log(age_1," - invalid variable value age_1")
 //     }
-//     else if(age_1 > age_3){
-// console.log("Keep calm and look Culture channel")
-//     }
-//     else{
-//         console.log('Technical work')
-//     }
+if (age_1 < age_2){
+    console.log('You don’t have access cause your age is ' + age_1 + ' It’s less then')
+}
+else if(age_1 >= age_2 && age_1 < age_3){
+    console.log('Welcome  !')
+    }
+else if(age_1 > age_3){
+    console.log("Keep calm and look Culture channel")
+    }
+else{
+    console.log('Technical work')
+};
+    console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
     function checkAge(age_1, age_2, age_3){
-        if (age_1 == 10){
-            console.log("variable value is correct = ", age_1)
+        if (age_1 < age_2){
+            console.log('You don’t have access cause your age is ' + age_1 + ' It’s less then')
+        }
+        else if(age_1 >= age_2 && age_1 < age_3){
+            console.log('Welcome  !')
             }
-
- }
-
- checkAge(17, 18, 61)
+        else if(age_1 > age_3){
+            console.log("Keep calm and look Culture channel")
+            }
+        else{
+            console.log('Technical work')
+    }
+}
+checkAge(17, 18, 61)
 //     1*:
 // Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
 // Пример: const checkAge = function(age) {

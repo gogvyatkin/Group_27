@@ -50,7 +50,10 @@ else{
     console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
     function checkAge(age_1, age_2, age_3){
-        if (age_1 < age_2){
+        if (typeof age_1 != "number" || typeof age_2 != "number" || typeof age_3 != "number"){
+        console.log("Error!")
+        }
+        else if (age_1 < age_2){
             console.log('You don’t have access cause your age is ' + age_1 + ' It’s less then')
         }
         else if(age_1 >= age_2 && age_1 < age_3){
@@ -63,7 +66,8 @@ else{
             console.log('Technical work')
     }
 }
-checkAge(17, 18, 61)
+checkAge("17", 18, 61)
+// console.log(typeof age_1)
 //     1*:
 // Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
 // Пример: const checkAge = function(age) {

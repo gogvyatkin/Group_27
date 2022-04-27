@@ -47,10 +47,11 @@ else if(age_1 > age_3){
 else{
     console.log('Technical work')
 };
-    console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+    console.log("************************************************************")
 
-    function checkAge(age_1, age_2, age_3){
-        if (typeof age_1 != "number" || typeof age_2 != "number" || typeof age_3 != "number"){
+function checkAge(age_1, age_2, age_3){
+        
+        if (isNaN(age_1) == "true" || typeof age_2 != "number" || typeof age_3 != "number"){
         console.log("Error!")
         }
         else if (age_1 < age_2){
@@ -66,8 +67,13 @@ else{
             console.log('Technical work')
     }
 }
-checkAge("17", 18, 61)
-// console.log(typeof age_1)
+let prt_1 = prompt('Введите первое число')
+let prt_2 = prompt('Введите второе число')
+let prt_3 = prompt('Введите третье')
+checkAge(prt_1, prt_2, prt_3)
+
+
+
 //     1*:
 // Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
 // Пример: const checkAge = function(age) {

@@ -1,21 +1,26 @@
 // Напишите валидационный скрипт используя функции 
 function script (trustr){
-    if (trustr.length < 5) //  3. Минимум 5 символов в строке
-    console.log("less than 5 characters entered")
-else if (trustr.length > 64)
+    if (trustr === "")
+console.log("Enter value!") // Строка не должна быть пустой
+
+else if (trustr.length < 5) //  3. Минимум 5 символов в строке
+console.log("less than 5 characters entered")
+
+else if (trustr.length > 64) // Максимум 64 символа в строке
 console.log("etnter less characters")
-else if (/(@[A-Za-z])\w+/.test(trustr)) // Должна быть хотя бы одна @
-console.log("good")
-else if (trustr === "")
-console.log("NO GOOD!")
+
+else if (/(@[A-Za-z])\w+/.test(trustr) == false) // Должна быть хотя бы одна @
+console.log("where is dog?")
+
     else 
     console.log("Everithing OK!")
 }
-script ("adsdr") // Валидно!
-// script ("adsd") // Скрипт должен на вход принимать строку.
- script ("adpo[aopsid[pasidasdpaosdkpaosfopjmvkamsopjasocjmasocaoscoancasncicnasocsd") // Максимум 64 символа в строке
- script ("dsfj@sdkg")
- script ("")
+script ("ads@dr") // Валидно!
+script ("a@sd") // Скрипт должен на вход принимать строку.
+script ("adpo[aopsid[pasidasdpaosdk@aosfopjmvkamsopjasocjmasocaoscoancasncicnasocsd") // Максимум 64 символа в строке
+script ("")
+script ("wsfdfgdf")
+
 //  /(@[A-Za-z])\w+/.test(str_text)
 
 

@@ -29,12 +29,6 @@ let age_3 = 60;
 
 console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
-// if (age_1 == 10){
-//     console.log(age_1," - valid variable value age_1",)
-// }
-// else if (age != 10) {
-//     console.log(age_1," - invalid variable value age_1")
-//     }
 if (age_1 < age_2){
     console.log('You don’t have access cause your age is ' + age_1 + ' It’s less then')
 }
@@ -51,7 +45,7 @@ else{
 
 function checkAge(age_1, age_2, age_3){
         
-        if (isNaN(age_1) == "true" || typeof age_2 != "number" || typeof age_3 != "number"){
+        if (isNaN(age_1) == true || typeof age_2 != "number" || typeof age_3 != "number"){
         console.log("Error!")
         }
         else if (age_1 < age_2){
@@ -67,11 +61,13 @@ function checkAge(age_1, age_2, age_3){
             console.log('Technical work')
     }
 }
-// let enterNum_1 = prompt('Введите число')
-// let enterNum_2 = prompt('Введите число')
-// let enterNum_3 = prompt('Введите число')
-// checkAge(enterNum_1, enterNum_2, enterNum_3)
+
+
 checkAge("17", 18, 61)
+checkAge('a', 18, 61)
 checkAge(19, 18, 61)
-checkAge("a", 18, 61)
 checkAge(100, 18, 61)
+checkAge(61, 18, 61)
+
+// let enterNum_1 = prompt('Введите число')
+// checkAge(enterNum_1, 18, 61)

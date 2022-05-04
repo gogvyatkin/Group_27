@@ -25,11 +25,6 @@ else
 console.log("8. Everithing OK!")
 }
 
-// Валидация полной формы Email
-// function script (trustr){    
-// if (/\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}/.test(trustr) == false)
-// console.log('Email invalid!')}
-
 script ("897246")
 script ("a@sd") 
 script ("adpo[aopsid[pasidasdpaosdk@aosfopjmvkamsopjasocjmasocaoscoancasncicnasocsd") 

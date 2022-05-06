@@ -62,9 +62,9 @@ function checkAge(age_1, age_2, age_3){
     }
 }
 
-
-checkAge("17", 18, 61)
+checkAge("17", "18", 61)
 checkAge('a', 18, 61)
+checkAge("17", 18, 61)
 checkAge(19, 18, 61)
 checkAge(100, 18, 61)
 checkAge(61, 18, 61)

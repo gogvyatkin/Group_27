@@ -1,0 +1,67 @@
+,,,,,,,
+,,,,,,,
+,ID,Title,INPUT,Expected result,Status,requirement clause,
+,,Проверка валидации,,,,,
+,1,Ввести валидные данные во все поля формы,"                          *
+Name: Vasya
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,PASS,,
+,2,Ввести валидные данные во все обязательные поля формы,"Name: Vasya
+Surname:
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,FAIL,,
+,Ввести данные в поле Name * -(в остальные поля формы ввести валидные данные),,,,,,
+,1,Не вводить данные в поле Name,"Name:
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",PASS,,
+,2,Ввести валидные данные на латинице в поле Name,"Name: Vasya
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,PASS,1.1,
+,3,Ввести валидные данные в поле Name используя цифры и латиницу,"Name: Vasya786
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Success! Hello: Vasya786 Ivanov,PASS,,
+,4,"Ввести валидные данные используя спецсимвол точку ""."" в конце.","Name: Vasya.
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Success! Hello: Vasya. Ivanov,PASS,,
+,5,"Вести валидные данные в поле Name используя спецсимвол точка ""."" два раз подряд в конце","Name: Vasya..
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,
+,6,Ввести валидные данные в верхнем регистре,"Name: VASYA
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Success! Hello: VASYA Ivanov,PASS,,
+,7,Ввести валидные данные в поле Name в нижнем регистре,"Name: vasya
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Success! Hello: vasya Ivanov,PASS,,
+,8,"Вести валидные данные в поле  Name со спецсимволом пробел "" "" в конце","Name: Vasya 
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,PASS,,?
+,9,"Вести валидные данные в поле Name используя спецсимвол пробел "" "" два раз подряд в конце","Name: Vasya  
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,PASS,,?
+,10,Вставить валидные данные в поле Name из буфера обмена,"Name: Vasya
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,PASS,,
+,11,"Ввести валидные данные используя спецсимволы точку ""."" и пробел "" "" в конце.","Name: Vasya. 
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewutg",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,PASS,,
+,12,"Ввести валидные данные используя спецсимволы точку ""."" и пробел "" "" в конце.",,,FAIL,,
+,13,,,,FAIL,,
+,14,,,,FAIL,,
+,5,,,,,,
+,5,,,,,,
+,5,,,,,,
+,5,,,,,,

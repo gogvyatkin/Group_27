@@ -75,8 +75,8 @@ Surname: Ivanov
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,,,
-,18,,,,,,,
-,19,,,,FAIL,,,
+,18,Граничные значения,,,,,,
+,19,Ввести,,,FAIL,,,
 ,20,,,,FAIL,,,
 ,21,,,,FAIL,,,
 ,22,,,,FAIL,,,

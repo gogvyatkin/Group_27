@@ -53,9 +53,3 @@ select "id", "name", "created_on" from students
 order by created_on asc;
 select "id", "name", "created_on" from students
 order by created_on desc;
-select min(id) as MIN_id
-from students;
-select max(id) as MAX_id
-from students;
-select count(id) as TOTAL_id
-from students;

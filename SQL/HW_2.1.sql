@@ -1,22 +1,104 @@
-
-create table employees(
-	id serial not null,
+drop table employees; -- удаляет таблицы
+create table employees( --создание таблицы сотрудники
+	id serial primary key,
 	employee_name varchar(50) not null
 );
 
+insert into employees(id, employee_name)
+	values (default, 'Vasya'),
+	       (default, 'Petya'),
+	   	   (default, 'Grisha'),
+	       (default, 'Olya'),
+	       (default, 'Vitya'),
+	       (default, 'Kolya'),
+	       (default, 'Vadim'),
+	       (default, 'Misha'),
+	       (default, 'Ilya'),
+	       (default, 'Yulya'),
+	       (default, 'Marina'),
+	       (default, 'Anna'),
+	       (default, 'Dasha'),
+	       (default, 'Tima'),
+	       (default, 'Klava'),
+	       (default, 'Venya'),
+	       (default, 'Liana'),
+	       (default, 'Vera'),
+	       (default, 'Sonya'),
+	       (default, 'Nina'),
+	       (default, 'Lena'),
+	       (default, 'Galya'),
+	       (default, 'Fedya'),
+	       (default, 'Mila'),
+	       (default, 'Slava'),
+	       (default, 'Gena'),
+	       (default, 'Lama'),
+	       (default, 'Alex'),
+	       (default, 'Dima'),
+	       (default, 'Kirill'),
+	       (default, 'Roma'),
+	       (default, 'Egor'),
+	       (default, 'Mamed'),
+	       (default, 'Anar'),
+	       (default, 'Janna'),
+	       (default, 'Andrey'),
+	       (default, 'Igor'),
+	       (default, 'Ira'),
+	       (default, 'Polya'),
+	       (default, 'Rita'),
+	       (default, 'Katya'),
+	       (default, 'Nadya'),
+	       (default, 'Ykov'),
+	       (default, 'Era'),
+	       (default, 'Lada'),
+	       (default, 'Avram'),
+	       (default, 'Alina'),
+	       (default, 'Maxim'),
+	       (default, 'Zahar'),
+	       (default, 'Ekim'),
+	       (default, 'Artur'),
+	       (default, 'David'),
+	       (default, 'Vlad'),
+	       (default, 'Linda'),
+	       (default, 'Demid'),
+	       (default, 'Gleb'),
+	       (default, 'Artur'),
+	       (default, 'Barbara'),
+	       (default, 'Diana'),
+	       (default, 'Mark'),
+	       (default, 'Danya'),
+	       (default, 'Kai'),
+	       (default, 'Osip'),
+	       (default, 'Nazar'),
+	       (default, 'Luka'),
+	       (default, 'Pasha'),
+	       (default, 'Kurt'),
+	       (default, 'Ipat'),
+	       (default, 'Zoya'),
+	       (default, 'Bella'
+	      );
 select * from employees;
 
---insert into employees(id, employee_name)
-	--values (default, 'Vasya'),
-	      -- (default, 'Petya'),
-	   	  -- (default, 'Grisha'),
-	      -- (default, 'Olya'),
-	      -- (default, 'Vitya'),
-	     --  (default, 'Kolya'),
-	      -- (default, 'Vadim'),
-	       --(default, 'Misha'),
-	      -- (default, 'Tima'),
-	      -- (default, 'Fedya'
-	     -- );
-	     
---select * from employees;
+create table salary( --создание таблицы зарплата
+	id serial primary key,
+	monthly_salary int not null
+	);
+insert into salary(id, monthly_salary) --заполнение таблицы
+	values (default, 1000),
+	       (default, 1100),
+	       (default, 1200),
+	       (default, 1300),
+	       (default, 1400),
+	       (default, 1500),
+	       (default, 1600),
+	       (default, 1700),
+	       (default, 1800),
+	       (default, 1900),
+	       (default, 2000),
+	       (default, 2100),
+	       (default, 2200),
+	       (default, 2300),
+	       (default, 2400),
+	       (default, 2500);
+	
+	select * from salary;
+	

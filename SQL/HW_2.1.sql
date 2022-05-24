@@ -1,5 +1,5 @@
-drop table employees; -- удаляет таблицы
-create table employees( --создание таблицы сотрудники
+drop table employees; -- СѓРґР°Р»РµРЅРёРµ С‚Р°Р±Р»РёС†С‹
+create table employees( --СЃРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ СЃРѕС‚СЂСѓРґРЅРёРєРё
 	id serial primary key,
 	employee_name varchar(50) not null
 );
@@ -78,11 +78,11 @@ insert into employees(id, employee_name)
 	      );
 select * from employees;
 
-create table salary( --создание таблицы зарплата
+create table salary( --СЃРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ Р·Р°СЂРїР»Р°С‚Р°
 	id serial primary key,
 	monthly_salary int not null
 	);
-insert into salary(id, monthly_salary) --заполнение таблицы
+insert into salary(id, monthly_salary) --РІРЅРµСЃРµРЅРёРµ РґР°РЅРЅС‹С… РІ С‚Р°Р±Р»РёС†Сѓ Р·Р°СЂРїР»Р°С‚Р°: РєРѕР»РѕРЅРєСѓ ID Рё monthly_salary
 	values (default, 1000),
 	       (default, 1100),
 	       (default, 1200),

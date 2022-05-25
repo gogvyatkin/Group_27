@@ -1,4 +1,4 @@
-drop table employees; -- удаление таблицы
+drop table employees; -- удаление таблицы сотрудники
 create table employees( --создание таблицы сотрудники
 	id serial primary key,
 	employee_name varchar(50) not null
@@ -77,6 +77,7 @@ insert into employees(id, employee_name)
 	       (default, 'Bella'
 	      );
 select * from employees;
+drop table salary; -- удаление таблицы зарплата
 
 create table salary( --создание таблицы зарплата
 	id serial primary key,
@@ -99,6 +100,56 @@ insert into salary(id, monthly_salary) --внесение данных в таб
 	       (default, 2300),
 	       (default, 2400),
 	       (default, 2500);
+select * from salary;
+
+drop table employees_salary; -- удаление таблицы зарплаты сотрудников
 	
-	select * from salary;
+	create table employees_salary( --создание таблицы зарплата сотрудника
+	id serial primary key,
+	employee_id int not null unique,
+	salary_id int not null
+	);
+	select * from employees_salary;
 	
+	insert into employees_salary(id, employee_id, salary_id)
+  values(default, 77, 10),
+		(default, 3, 2),
+		(default, 1, 11),
+		(default, 6, 16),
+		(default, 59, 8),
+		(default, 73, 9),
+		(default, 25, 4),
+		(default, 82, 7),
+		(default, 35, 1),
+		(default, 92, 3),
+		(default, 58, 13),
+		(default, 27, 9),
+		(default, 22, 3),
+		(default, 51, 8),
+		(default, 83, 10),
+		(default, 70, 2),
+		(default, 19, 14),
+		(default, 47, 6),
+		(default, 67, 4),
+		(default, 50, 10),
+		(default, 33, 7),
+		(default, 9, 5),
+		(default, 71, 1),
+		(default, 68, 2),
+		(default, 24, 13),
+		(default, 57, 16),
+		(default, 18, 3),
+		(default, 20, 11),
+		(default, 44, 2),
+		(default, 99, 4),
+		(default, 81, 6),
+		(default, 29, 7),
+		(default, 94, 12),
+		(default, 55, 14),
+		(default, 8, 9),
+		(default, 54, 5),
+		(default, 76, 8),
+		(default, 69, 10),
+		(default, 7, 15),
+	    (default, 15, 5);
+	select * from employees_salary;		 

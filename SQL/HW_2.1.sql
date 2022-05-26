@@ -5,7 +5,8 @@ create table employees( --создание таблицы сотрудники
 );
 
 insert into employees(id, employee_name)
-	values (default, 'Vasya'),
+	values 
+	       (default, 'Vasya'),
 	       (default, 'Petya'),
 	   	   (default, 'Grisha'),
 	       (default, 'Olya'),
@@ -84,7 +85,8 @@ create table salary( --создание таблицы зарплата
 	monthly_salary int not null
 	);
 insert into salary(id, monthly_salary) --внесение данных в таблицу зарплата: колонку ID и monthly_salary
-	values (default, 1000),
+	values 
+	       (default, 1000),
 	       (default, 1100),
 	       (default, 1200),
 	       (default, 1300),
@@ -112,7 +114,8 @@ drop table employees_salary; -- удаление таблицы зарплаты
 	select * from employees_salary;
 	
 	insert into employees_salary(id, employee_id, salary_id)
-  values(default, 77, 10),
+  values
+        (default, 77, 10),
 		(default, 3, 2),
 		(default, 1, 11),
 		(default, 6, 16),
@@ -153,3 +156,48 @@ drop table employees_salary; -- удаление таблицы зарплаты
 		(default, 7, 15),
 	    (default, 15, 5);
 	select * from employees_salary;		 
+
+drop table roles;
+create table roles( --создание таблицы должность
+id serial primary key,
+role_name int not null unique);
+select * from roles;
+
+ALTER TABLE roles
+drop column	role_name;
+ALTER TABLE roles
+add role_name varchar(30) not null unique;
+select * from roles;
+
+	insert into roles (id, role_name)
+  values
+  (default, 'Junior Python developer'),
+  (default, 'Middle Python developer'),
+  (default, 'Senior Python developer'),
+  (default, 'Junior Java developer'),
+  (default, 'Middle Java developer'),
+  (default, 'Senior Java developer'),
+  (default, 'Junior JavaScript developer'),
+  (default, 'Middle JavaScript developer'),
+  (default, 'Senior JavaScript developer'),
+  (default, 'Junior Manual QA engineer'),
+  (default, 'Middle Manual QA engineer'),
+  (default, 'Senior Manual QA engineer'),
+  (default, 'Project Manager'),
+  (default, 'Designer'),
+  (default, 'HR'),
+  (default, 'CEO'),
+  (default, 'Sales manager'),
+  (default, 'Junior Automation QA engineer'),
+  (default, 'Middle Automation QA engineer'),
+  (default, 'Senior Automation QA engineer');
+  
+  select * from roles;
+ 
+ drop table roles_employee;
+ create table roles_employee(
+ id serial primary key,
+ employee_id int not null unique,
+ role_id int not null
+ );
+ select * from roles_employee;

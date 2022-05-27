@@ -198,6 +198,54 @@ select * from roles;
  create table roles_employee(
  id serial primary key,
  employee_id int not null unique,
- role_id int not null
+ role_id int not null,
+ foreign key employee_id
+ 	references employees(id),
+ foreign key role_id
+ 	references roles(id)
  );
  select * from roles_employee;
+ 
+insert into roles_employee(employee_id, role_id)
+values
+		(1, 3),
+		(3, 4),
+		(4, 12),
+		(7, 10),
+		(10, 9),
+		(11, 8),
+		(15, 13),
+		(18, 19),
+		(19, 14),
+		(21, 18),
+		(25, 15),
+		(23, 7),
+		(27, 6),
+		(28, 1),
+		(29, 7),
+		(31, 2),
+		(33, 20),
+		(34, 17),
+		(35, 9),
+		(37, 16),
+		(38, 4),
+		(39, 8),
+		(44, 5),
+		(45, 11),
+		(47, 12),
+		(50, 14),
+		(52, 3),
+		(55, 15),
+		(57, 16),
+		(58, 20),
+		(59, 19),
+		(62, 17),
+		(60, 1),
+		(61, 13),
+		(67, 10),
+		(65, 2),
+		(68, 6),
+		(64, 4),
+		(63, 7),
+		(70, 5);
+select * from roles_employee;

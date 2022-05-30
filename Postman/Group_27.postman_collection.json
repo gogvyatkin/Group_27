@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "bd4aaccf-5d80-4495-b599-1d6570210344",
 		"name": "Group_27",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19410097"
 	},
 	"item": [
 		{
@@ -497,7 +498,7 @@
 									"pm.environment.set(\"age\", resp_age); // create 'age' variable in environment\r",
 									"let resp_salary = jsonData.salary;\r",
 									"pm.environment.set(\"salary\", resp_salary [0]); // create 'name' variable in environment\r",
-									"\r",
+									"// в зависимости от ситуации можно использовать конкретниые значения для переменных окружения, а не переменные взятые из response. напримере вместо resp_name - 'Vasya'\r",
 									"for (let i = 0; i < resp_salary.length; i++) {\r",
 									"     console.log(\"salaru loop = \", resp_salary[i]);\r",
 									"}"

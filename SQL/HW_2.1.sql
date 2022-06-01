@@ -78,6 +78,7 @@ insert into employees(id, employee_name)
 	       (default, 'Bella'
 	      );
 select * from employees;
+
 drop table salary; -- удаление таблицы зарплата
 
 create table salary( --создание таблицы зарплата
@@ -195,13 +196,14 @@ select * from roles;
   select * from roles;
  
  drop table roles_employee;
+
  create table roles_employee(
  id serial primary key,
  employee_id int not null unique,
  role_id int not null,
- foreign key employee_id
+ foreign key (employee_id)
  	references employees(id),
- foreign key role_id
+ foreign key (role_id)
  	references roles(id)
  );
  select * from roles_employee;

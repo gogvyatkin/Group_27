@@ -133,37 +133,49 @@ Error: Error: All Fields are Required",PASS,,,,,
 Surname: Ivanov019
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov019,PASS,,,,,
-,28,"Ввести валидные данные спользуя спецсимвол пробел ""."" в начале и в конце слова в поле Surname","Name: Vladimir
-Surname: .Ivanov019.
+,28,"Ввести валидные данные используя спецсимвол пробел ""."" в начале и в конце слова в поле Surname","Name: Vladimir
+Surname: .Ivanov.
 Email: Vasyaivanov@spaceweb.com
-Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir .Ivanov019.,PASS,,,,,
-,29,"Ввести валидные данные спользуя два спецсимвола точка ""."" в начале и в конце слова, в поле Surname","Name: Vladimir
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir .Ivanov.,PASS,,,,,
+,29,"Ввести валидные данные используя два спецсимвола точка ""."" в начале и в конце слова, в поле Surname","Name: Vladimir
 Surname: ..Ivanov019..
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,Bug,,,,
-,30,"Ввести валидные данные спользуя спецсимвол пробел "" "" в начале и в конце слова, в поле Surname","Name: Vladimir
+,30,"Ввести валидные данные используя спецсимвол пробел "" "" в серелине слова, в поле Surname","Name: Vladimir
+Surname: Iva nov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Iva nov,PASS,,,,,
+,31,"Ввести валидные данные используя два спецсимвола пробел "" "" в серелине слова, в поле Surname","Name: Vladimir
+Surname: Iva  nov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,Bug,,,,
+,32,"Ввести валидные данные используя спецсимвол пробел "" "" в начале и в конце слова, в поле Surname","Name: Vladimir
 Surname:  Ivanov 
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
-,31,"Ввести валидные данные спользуя два спецсимвола пробел "" "" в начале и в конце слова, в поле Surname","Name: Vladimir
+,33,"Ввести валидные данные используя два спецсимвола пробел "" "" в начале и в конце слова, в поле Surname","Name: Vladimir
 Surname:   Ivanov  
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
-,32,Ввести валидные данные в поле Surname только в нижнем регистре,"Name: Vladimir
+,34,Ввести валидные данные в поле Surname только в нижнем регистре,"Name: Vladimir
 Surname: ivanov
 Email: Vasyaivanov@spaceweb.com
-Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov019,PASS,,,,,
-,33,Ввести валидные данные в поле Surname только в верхнем регистре,"Name: Vladimir
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir ivanov,PASS,,,,,
+,35,Ввести валидные данные в поле Surname только в верхнем регистре,"Name: Vladimir
 Surname: IVANOV
 Email: Vasyaivanov@spaceweb.com
-Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov019,PASS,,,,,
-,34,Ввести данные используя кириллицу в поле Surname,"Name: Vladimir
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir IVANOV,PASS,,,,,
+,36,Ввести данные используя кириллицу в поле Surname,"Name: Vladimir
 Surname: Иванов
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован. Под формой регистрации сообщение:
-Error: Error: All Fields are Required",FAIL,,,,,
-,35,Вставить валидные данные из буфера обмена в поле Surname,"Name: Vladimir
+Error: Error: All Fields are Required",FAIL,Bug,,,,
+,37,Вставить валидные данные из буфера обмена в поле Surname,"Name: Vladimir
 Surname:  Ivanov 
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,38,,,,,,,,,
+,Граничные значения,,,,,,,,,
+,40,,,,,,,,,

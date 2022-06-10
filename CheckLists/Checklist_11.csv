@@ -229,3 +229,51 @@ Surname: IvanovqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasy
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,,,,,
+,"Поле E-mail
+Ввести данные в поле E-mail * -(в остальные поля формы ввести валидные данные)",,,,,,,,,
+,"До знака ""@""",,,,,,,,,
+,51,Ввести валидные данные в верхнем регистре в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: VASYAIVANOV@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,52,Ввести валидные данные в нижнем регистре в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,53,Ввести валидные данные используя буквы и цыфры в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov135@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,54,"ввести валидные данные используя спецсимвол точка ""."" в поле Email","Name: Vladimir
+Surname: Ivanov
+Email: vasya.ivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,55,"ввести валидные данные используя спецсимвол тире ""-"" в поле Email","Name: Vladimir
+Surname: Ivanov
+Email: vasya-ivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,56,"ввести валидные данные используя спецсимвол точка ""."" два раза подряд в поле Email","Name: Vladimir
+Surname: Ivanov
+Email: vasya..ivanov@spaceweb.com
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,57,"ввести валидные данные используя спецсимвол тире ""-"" два раза подряд в поле Email","Name: Vladimir
+Surname: Ivanov
+Email: vasya--ivanov@spaceweb.com
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,58,,,,,,,,,
+,59,,,,,,,,,
+,60,,,,,,,,,
+,61,,,,,,,,,
+,62,,,,,,,,,
+,63,,,,,,,,,
+,64,,,,,,,,,
+,65,,,,,,,,,
+,66,,,,,,,,,
+,67,,,,,,,,,
+,68,,,,,,,,,
+,69,,,,,,,,,
+,70,,,,,,,,,

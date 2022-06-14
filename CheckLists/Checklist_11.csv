@@ -345,7 +345,14 @@ Email:uyfrewivanovfrewivanovfrewivanovyuhjnbcfrewivanov@spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,,,,,
-,71,,,,,,,,,
-,72,,,,,,,,,
-,73,,,,,,,,,
-,74,,,,,,,,,
+,"от знака ""@"" до точки",,,,,,,,,
+,71,Ввести валидные данные в нижнем регистре в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,72,Ввести валидные данные в верхнем регистре в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: Vasyaivanov@SPACEWEB.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,73,,,,PASS,,,,,
+,74,,,,PASS,,,,,

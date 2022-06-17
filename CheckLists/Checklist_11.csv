@@ -301,7 +301,7 @@ Password: Ka5@tewung",Пользователь зарегестрирован. �
 ,,,,,,,,,,
 ,62,Не вводить данные в поле Email,"Name: Vladimir
 Surname: Ivanov
-Email: 
+Email: @spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,,,,,
@@ -390,3 +390,24 @@ Email: vasyaivanov@space--web.com
 Password: Ka5@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,,,,,
+,Граничные значения,,,,,,,,,
+,80,Не вводить данные в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@.com
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,81,Вести один знак в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email:  vasyaivanov@b.com
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,82,ввести два знака в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@eb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,83,ввести три знака в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@web.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,

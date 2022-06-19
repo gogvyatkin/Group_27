@@ -415,5 +415,18 @@ Password: Ka5@tewung",Пользователь зарегестрирован. �
 Surname: Ivanov
 Email:vasyaivanov@traturbospaceweb.com
 Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
-,85,,,,PASS,,,,,
-,86,,,,PASS,,,,,
+,85,ввести 31 знак в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email:vasyaivanov@ttraturbospaceweraturbospaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,86,ввести 32 знаков в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email:vasyaivanov@traturbospacewebtraturbospaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,87,ввести 33 знаков в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email:vasyaivanov@traturbospacewebjtraturbospaceweb.com
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,88,,,,PASS,,,,,

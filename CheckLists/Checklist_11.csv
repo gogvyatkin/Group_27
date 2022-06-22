@@ -458,3 +458,19 @@ Error: Error: All Fields are Required",FAIL,,,,,
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.COM
 Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,93,ввести валидные данные используя пробел в конце слова,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,94,ввести валидные данные используя пробел в начале слова,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb. com
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,95,оставить поле пустым,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,

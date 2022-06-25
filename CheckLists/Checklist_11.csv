@@ -483,15 +483,45 @@ Password: Ka5@tewung","Пользователь не зарегестриров�
 Error: Error: All Fields are Required",FAIL,,,,,
 ,97,Вести один знак в поле Email,"Name: Vladimir
 Surname: Ivanov
-Email: vasyaivanov@spac eweb.c
+Email: vasyaivanov@spaceweb.c
 Password: Ka5@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,,,,,
-,98,,,,,,,,,
-,99,,,,,,,,,
-,100,,,,,,,,,
-,101,,,,,,,,,
-,102,,,,,,,,,
-,103,,,,,,,,,
-,104,,,,,,,,,
-,105,,,,,,,,,
+,98,Вести два знака в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.co
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,99,Вести три знака в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,100,Вести 8 знаков в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.comateku
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,101,Вести 15 знаков в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.comatekupertiyf
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,102,Вести 16 знаков в поле Email,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.comatekupertiyfo
+Password: Ka5@tewung",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,103,,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.c
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,104,,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.c
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,
+,105,,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.c
+Password: Ka5@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,,,,,

@@ -24,7 +24,7 @@ Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vlad  imir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,4,Пользователь зарегистрировани при использовании кириллице в поле Name,"1. Открыть страницу регистрации.
+,4,Пользователь зарегистрирован при использовании кириллице в поле Name,"1. Открыть страницу регистрации.
 2. Ввести валидные данные во все поля формы регистрации, а в поле Name ввести слово Владимир
 Name: Владимир
 Surname: Ivanov
@@ -32,7 +32,28 @@ Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,5,,,,,,
-,6, ,,,,,
-,7,,,,,,
+,5,Пользователь зарегистрирован при введие четырёх знаков в поле Name,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Name ввести слово Vlad
+Name: Vlad
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
+,6,Пользователь  не зарегистрирован при введении 69 в поле Name ,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Name ввести слово Vasyaneohvbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfh
+Name: Vasyaneohvbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfh
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasyaneohvbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfhbhjbvkdjfh Ivanov,,
+,7,Пользователь  не зарегистрирован при введении 127 в поле Name ,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Name ввести слово VasyanqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfh
+Name: VasyanqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfh
+Surname: Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: VasyanqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfh Ivanov,,
 ,,  ,,,,,

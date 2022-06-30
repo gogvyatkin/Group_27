@@ -7,8 +7,8 @@ Surname:
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
-Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasya Ivanov,Major,Medium
-?,2,"Пользователь зарегистрирован при введенных двух подряд спецсимволах "".""","1. Открыть страницу регистрации.
+Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,Major,Medium
+?,2,"Пользователь зарегистрирован при введенных двух подряд спецсимволах точка ""."" в конце слова в поле Name","1. Открыть страницу регистрации.
 2. Ввести валидные данные во все поля формы регистрации:
 Name: Vladimir..
 Surname: Ivanov
@@ -64,7 +64,19 @@ Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vasyanq1VasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfh Ivanov,,
-,9,,,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
-Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: VasyanqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfh Ivanov,,
-,10,,,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
-Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: VasyanqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfh Ivanov,,
+,9,"Пользователь зарегистрирован при введение двух спецсимволов точка ""."" подряд в начале слова в поле Surname","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации:
+Name: Vladimir
+Surname: ..Ivanov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir ..Ivanov,,
+,10,"Пользователь зарегистрирован при введение двух спецсимволов пробел "" "" подряд в середине слова в поле Surname","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации:
+Name: Vladimir
+Surname: Iva  nov
+Email: Vasyaivanov@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Iva  nov,,

@@ -521,9 +521,27 @@ Password: Ka5@tewung","Пользователь не зарегестриров�
 Error: Error: All Fields are Required",FAIL,Bug_45,,,,
 ,"Поле Password
 Ввести данные в поле Password * -(в остальные поля формы ввести валидные данные)",,,,,,,,,
-,105,ввести символы в нижнем регистре,"Name: Vladimir
+,105,ввести буквы в нижнем регистре,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx
 Password: ka5@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,Bug_46,,,,
+,106,ввести буквы в верхнем регистре,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx
+Password: KA5@TEWUNG","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,Bug_47,,,,
+,107,"ввести в поле password символы не используя обязательный спецсимвол ""@""","Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx
+Password: Ka5tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,Bug_48,,,,
+,108,ввести в поле password символы без цифр,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx
+Password: Ka@tewung","Пользователь не зарегестрирован.
+Под формой регистрации сообщение:
+Error: Error: All Fields are Required",FAIL,Bug_49,,,,

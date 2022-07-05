@@ -545,12 +545,12 @@ Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx
 Password: Ka@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,Bug_49,,,,
-,109,,"Name: Vladimir
+,109,оставить поле пустым,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx
-Password: Ka@tewung","Пользователь не зарегестрирован.
+Password:","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
-Error: Error: All Fields are Required",PASS,,,,,
+Error: Error: All Fields are Required",FAIL,Bug_50,,,,
 ,110,,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.comatekupertiyfovgiklrszx

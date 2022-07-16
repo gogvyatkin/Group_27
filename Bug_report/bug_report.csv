@@ -113,21 +113,21 @@ Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Iva,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
 ,15,Пользователь зарегистрирован при введении четырёх знаков в поле Surname,"1. Открыть страницу регистрации.
-2. Ввести валидные данные во все поля формы регистрации:
+2. Ввести валидные данные во все поля формы регистрации, а в поле Surname ввести символы Ivan:
 Name: Vladimir
 Surname: Ivan
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivan,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,16,,"1. Открыть страницу регистрации.
-2. Ввести валидные данные во все поля формы регистрации:
+,16,Пользователь зарегистрирован при введении 129 знаков в поле Surname,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Surname ввести символы IvanovqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhiq:
 Name: Vladimir
-Surname: Iva  nov
+Surname: IvanovqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhiq
 Email: Vasyaivanov@spaceweb.com
 Password: Ka5@tewung
-3. Нажать кнопку ""Submit""","Пользователь не зарегестрирован. Под формой регистрации сообщение:
-Error: Error: All Fields are Required",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Iva  nov,,
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir IvanovqVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhVasyaneohvbhjbvkdjfhiq,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,17,,"1. Открыть страницу регистрации.
 2. Ввести валидные данные во все поля формы регистрации:
 Name: Vladimir

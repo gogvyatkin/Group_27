@@ -144,7 +144,14 @@ Email: vasya..ivanov@spaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,19,,,,,,
+,19,"Пользователь зарегистрирован при  введии спецсимвола тире ""-"" два раза подряд в поле Email","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasya--ivanov@spaceweb.com:
+Name: Vladimir
+Surname: Ivanov
+Email: vasya--ivanov@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,20,,,,,,
 ,21,,,,,,
 ,22,,,,,,

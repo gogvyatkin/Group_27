@@ -160,7 +160,14 @@ Email: vasyaivanovspaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,21,,,,,,
+,21,"Пользователь зарегистрирован при использовании двух подряд  символов ""@"" в поле Email","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanovspaceweb.com:
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@@spaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,22,,,,,,
 ,23,,,,,,
 ,24,,,,,,

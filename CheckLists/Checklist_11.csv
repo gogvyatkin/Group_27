@@ -271,7 +271,7 @@ Email: vasyaivanovspaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,Bug_20,,,,
-,57,"ввести валидные данные используя спецсимвол ""@"" два раз подряд в поле Email","Name: Vladimir
+,57,"ввести валидные данные используя спецсимвол ""@"" два раза подряд в поле Email","Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@@spaceweb.com
 Password: Ka5@tewung","Пользователь не зарегестрирован.

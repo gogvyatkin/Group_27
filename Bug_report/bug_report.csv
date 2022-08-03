@@ -248,7 +248,14 @@ Email: vasyaivanov@spac eweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,32,,,,,,
+,32,"Пользователь зарегистрирован при введении символа точка ""."" в середине слова от знака собака ""@"" до последней точки в поле Email","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@spac..eweb.com:
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spac..eweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,33,,,,,,
 ,34,,,,,,
 ,35,,,,,,

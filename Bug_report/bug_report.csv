@@ -281,14 +281,21 @@ Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
 ,36,"Пользователь зарегистрирован при введение 33 символов от знака собака ""@"" до последней точки в поле Email","1. Открыть страницу регистрации.
-2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@b.com:
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@traturbospacewebjtraturbospaceweb.com:
 Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@traturbospacewebjtraturbospaceweb.com
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,37,,,,,,
+,37,"Пользователь зарегистрирован при введение 50 символов от знака собака ""@"" до последней точки в поле Email","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@traturbospacewebjtraturbtraturbospacewebjospaceweb.com:
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@traturbospacewebjtraturbtraturbospacewebjospaceweb.com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,38,,,,,,
 ,39,,,,,,
 ,40,,,,,,

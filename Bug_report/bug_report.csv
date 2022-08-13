@@ -312,8 +312,22 @@ Email: vasyaivanov@spaceweb.ком
 Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,40,,,,,,
-,41,,,,,,
+,40,"Пользователь зарегистрирован при введение пробела "" "" вначале слова от последней точки до конца в поле Email","1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@spaceweb. com:
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb. com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
+,41,Пользователь зарегистрирован при отсутствии символов от последней точки до конца в поле Email,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@spaceweb. com:
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb. com
+Password: Ka5@tewung
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,42,,,,,,
 ,43,,,,,,
 ,44,,,,,,

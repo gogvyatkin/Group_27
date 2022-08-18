@@ -353,14 +353,21 @@ Password: Ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
 ,46,Пользователь зарегистрирован при введении всех символов в нижнем регистре  в поле Password,"1. Открыть страницу регистрации.
-2. Ввести валидные данные во все поля формы регистрации, а в поле Email ввести vasyaivanov@spaceweb.comatekupertiyfovgiklrszx :
+2. Ввести валидные данные во все поля формы регистрации, а в поле Password ввести ka5@tewung :
 Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
 Password: ka5@tewung
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,46,,,,,,
+,47,Пользователь зарегистрирован при введении всех символов в верхнем регистре  в поле Password,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Password ввести KA5@TEWUNG :
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: KA5@TEWUNG
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
 ,47,,,,,,
 ,48,,,,,,
 ,49,,,,,,

@@ -533,7 +533,7 @@ Email: vasyaivanov@spaceweb.com
 Password: KA5@TEWUNG","Пользователь не зарегестрирован.
 Под формой регистрации сообщение:
 Error: Error: All Fields are Required",FAIL,Bug_47,,,,
-,107,"ввести в поле password символы не используя обязательный спецсимвол ""@""","Name: Vladimir
+,107,"ввести в поле символы не используя обязательный спецсимвол ""@""","Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
 Password: Ka5tewung","Пользователь не зарегестрирован.
@@ -549,18 +549,12 @@ Error: Error: All Fields are Required",FAIL,Bug_49,,,,
 ,109,оставить поле пустым,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
-Password:","Пользователь не зарегестрирован.
-Под формой регистрации сообщение:
-Error: Error: All Fields are Required",FAIL,Bug_50,,,,
+Password:",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,FAIL,Bug_50,,,,
 ,110,ввести пять валидных символов,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
-Password: Ka5@te","Пользователь не зарегестрирован.
-Под формой регистрации сообщение:
-Error: Error: All Fields are Required",FAIL,Bug_51,,,,
-,111,,"Name: Vladimir
+Password: Ka5@t",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,FAIL,Bug_51,,,,
+,111,ввести шесть валидных символов,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
-Password: Ka@tewung","Пользователь не зарегестрирован.
-Под формой регистрации сообщение:
-Error: Error: All Fields are Required",FAIL,Bug_52,,,,
+Password: Ka5@te",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,Bug_52,,,,

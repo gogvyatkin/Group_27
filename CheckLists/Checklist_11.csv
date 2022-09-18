@@ -557,4 +557,12 @@ Password: Ka5@t",Пользователь зарегестрирован. Под
 ,111,ввести шесть валидных символов,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
-Password: Ka5@te",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,Bug_52,,,,
+Password: Ka5@te",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,112,ввести семь валидных символов,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@tew",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,113,ввести шесть валидных символов,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@te",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,

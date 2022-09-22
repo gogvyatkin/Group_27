@@ -570,4 +570,7 @@ Password: Ka5@tewungidmyp",Пользователь зарегестрирова
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
 Password: Ka5@tewungidmypo",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
-,115,,,Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
+,115,ввести семнадцать валидных символов,"Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@tewungidmypod",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,FAIL,Bug_52,,,,

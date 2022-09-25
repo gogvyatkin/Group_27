@@ -570,7 +570,7 @@ Password: Ka5@tewungi",Пользователь зарегестрирован. 
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
 Password: Ka5@tewungidmyp",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
-,115,ввести шестнадцать валидных символов,"Name: Vladimir
+,ввести 30 валидных символов,ввести шестнадцать валидных символов,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
 Password: Ka5@tewungidmypo",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,PASS,,,,,
@@ -578,7 +578,7 @@ Password: Ka5@tewungidmypo",Пользователь зарегестриров�
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
 Password: Ka5@tewungidmypod",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,FAIL,Bug_52,,,,
-,117,,"Name: Vladimir
+,117,ввести 30 валидных ,"Name: Vladimir
 Surname: Ivanov
 Email: vasyaivanov@spaceweb.com
-Password: Ka5@tewungidmypo",,PASS,,,,,
+Password: Ka5@tewungidmypodlpr65mbke1b0r",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,FAIL,Bug_53,,,,

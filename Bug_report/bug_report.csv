@@ -408,4 +408,11 @@ Email: vasyaivanov@spaceweb.com
 Password: Ka5@tewungidmypod
 3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
 Error: Error: All Fields are Required",,
-,53,,,,,,
+,53,Пользователь зарегистрирован при введении 30 валидных симполов в поле Password,"1. Открыть страницу регистрации.
+2. Ввести валидные данные во все поля формы регистрации, а в поле Password не вводить никаких символов :
+Name: Vladimir
+Surname: Ivanov
+Email: vasyaivanov@spaceweb.com
+Password: Ka5@tewungidmypodlpr65mbke1b0r
+3. Нажать кнопку ""Submit""",Пользователь зарегестрирован. Под формой регистрации сообщение: Success! Hello: Vladimir Ivanov,"Пользователь не зарегестрирован. Под формой регистрации сообщение:
+Error: Error: All Fields are Required",,
